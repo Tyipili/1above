@@ -1,4 +1,4 @@
-"use client";
+'use client';
 import { useState } from "react";
 import { login } from "@/lib/auth";
 import { useRouter } from "next/navigation";
