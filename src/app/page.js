@@ -22,20 +22,26 @@ export default function Home() {
     </div>
   </div>
 </section>
-
-      <section className="container grid sm:grid-cols-3 gap-6 pb-20">
-        {[
-          { href: "/products/vapes", title: "Vapes" },
-          { href: "/products/concentrates", title: "Concentrates" },
-          { href: "/products/pre-rolls", title: "Pre-rolls" },
-        ].map((c) => (
-          <a key={c.href} href={c.href} className="card p-6 hover:shadow-md">
-            <h3 className="text-xl font-semibold">{c.title}</h3>
-            <p className="text-sm text-zinc-600 mt-2">Explore the {c.title.toLowerCase()} lineup.</p>
-          </a>
-        ))}
-      </section>
-
+      <section className="container grid sm:grid-cols-3 gap-6 py-16">
+  {[
+    { href: "/products/vapes", title: "Vapes", img: "/hero-bg.jpg" },
+    { href: "/products/concentrates", title: "Concentrates", img: "/hero-bg.jpg" },
+    { href: "/products/pre-rolls", title: "Pre-rolls", img: "/hero-bg.jpg" },
+  ].map((c) => (
+    <a
+      key={c.href}
+      href={c.href}
+      className="relative rounded-2xl overflow-hidden shadow-lg group"
+      style={{ backgroundImage: `url(${c.img})`, backgroundSize: "cover", backgroundPosition: "center" }}
+    >
+      <div className="absolute inset-0 bg-black/50 group-hover:bg-black/40"></div>
+      <div className="relative p-8 text-white">
+        <h3 className="text-2xl font-bold text-brand-gold">{c.title}</h3>
+        <p className="text-sm mt-2">Explore the {c.title.toLowerCase()} lineup.</p>
+      </div>
+    </a>
+  ))}
+</section>
       <section className="bg-zinc-50 py-16">
         <div className="container grid sm:grid-cols-2 gap-6">
           <div className="card p-6">
