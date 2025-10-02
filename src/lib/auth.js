@@ -1,4 +1,4 @@
-"use client";
+'use client';
 import { store } from "./store";
 
 const seed = { email: "istvan.szekely@gmail.com", password: "@Tyipu813@" };
