@@ -1,4 +1,4 @@
-"use client";
+'use client';
 import { useState } from "react";
 
 export const metadata = { title: "Contact | 1 Above" };
