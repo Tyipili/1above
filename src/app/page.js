@@ -3,19 +3,25 @@ import Link from "next/link";
 export default function Home() {
   return (
     <div>
-      <section className="relative overflow-hidden">
-        <div className="container py-16 sm:py-24">
-          <p className="uppercase tracking-[0.2em] text-sm text-zinc-600">Meticulously made for</p>
-          <h1 className="mt-2 text-4xl sm:text-6xl font-extrabold">An Elevated Experience</h1>
-          <p className="mt-6 max-w-2xl text-lg text-zinc-700">
-            1 Above delivers top-quality, innovative products with a focus on flavour and potency. Built on advanced extraction, tested hardware, and custom formulations, our products provide a cannabis experience like no other.
-          </p>
-          <div className="mt-8 flex gap-3">
-            <Link href="/products" className="btn btn-primary">Explore Products</Link>
-            <Link href="/coa" className="btn btn-ghost">Find Your COA</Link>
-          </div>
-        </div>
-      </section>
+      <section
+  className="relative bg-brand-green text-white"
+  style={{ backgroundImage: "url('/hero-bg.jpg')", backgroundSize: "cover", backgroundPosition: "center" }}
+>
+  <div className="absolute inset-0 bg-black/50"></div> {/* overlay for contrast */}
+  <div className="relative container py-24 sm:py-32 text-center">
+    <p className="uppercase tracking-[0.2em] text-sm text-brand-gold">Meticulously made for</p>
+    <h1 className="mt-4 text-5xl sm:text-7xl font-extrabold">An Elevated Experience</h1>
+    <p className="mt-6 max-w-2xl mx-auto text-lg text-brand-offwhite">
+      1 Above delivers top-quality, innovative products with a focus on flavour and potency.
+      Built on advanced extraction, tested hardware, and custom formulations, our products
+      provide a cannabis experience like no other.
+    </p>
+    <div className="mt-8 flex justify-center gap-4">
+      <a href="/products" className="btn bg-brand-gold text-black hover:bg-yellow-500">Explore Products</a>
+      <a href="/coa" className="btn border border-brand-gold text-brand-gold hover:bg-brand-gold hover:text-black">Find Your COA</a>
+    </div>
+  </div>
+</section>
 
       <section className="container grid sm:grid-cols-3 gap-6 pb-20">
         {[
