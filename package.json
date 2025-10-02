@@ -1,0 +1,23 @@
+{
+  "name": "1-above-site",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "echo 'lint skipped'"
+  },
+  "dependencies": {
+    "next": "14.2.4",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "tailwindcss": "3.4.7",
+    "autoprefixer": "10.4.19",
+    "postcss": "8.4.39",
+    "zod": "3.23.8",
+    "react-hook-form": "7.52.0",
+    "papaparse": "5.4.1",
+    "nodemailer": "6.9.13"
+  }
+}
