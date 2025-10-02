@@ -1,4 +1,4 @@
-"use client";
+'use client';
 import { requireAuth } from "@/lib/auth";
 
 export default function Assets(){
