@@ -1,4 +1,4 @@
-"use client";
+'use client';
 import { requireAuth } from "@/lib/auth";
 import { useState } from "react";
 import { addCOA, listCOA, importCOACsv } from "@/lib/coa";
