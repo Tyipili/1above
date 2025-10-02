@@ -1,4 +1,4 @@
-"use client";
+'use client';
 import { requireAuth } from "@/lib/auth";
 import { listProducts, addProduct } from "@/lib/products";
 import { useState } from "react";
