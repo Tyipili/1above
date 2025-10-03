@@ -4,9 +4,7 @@ export default function Home() {
   return (
     <div>
       <section
-  className="relative bg-brand-green text-white"
-  style={{ backgroundImage: "url('/hero-bg.jpg')", backgroundSize: "cover", backgroundPosition: "center" }}
->
+  className="relative bg-brand-green text-white">
   <div className="absolute inset-0 bg-black/50"></div> {/* overlay for contrast */}
   <div className="relative container py-24 sm:py-32 text-center">
     <p className="uppercase tracking-[0.2em] text-sm text-brand-gold">Meticulously made for</p>
