@@ -957,4 +957,19 @@
                             <div class="product-category">${product.category || 'General'}</div>
                             <h3>${product.name}</h3>
                             <p>${product.description}</p>
-                            <div class="product-
+                            <div class="product-meta">
+                                <div class="price">${product.price}</div>
+                                <button class="btn-view-product">View Details</button>
+                            </div>
+                        </div>
+                    `;
+                    productGrid.appendChild(productCard);
+                });
+            } catch (error) {
+                console.error('Error loading products:', error);
+                productGrid.innerHTML = '<p style="text-align: center; grid-column: 1/-1; padding: 60px; color: #d32f2f;">Failed to load products. Please make sure products.json file exists in the same folder as index.html</p>';
+            }
+        }
+    </script>
+</body>
+</html>
